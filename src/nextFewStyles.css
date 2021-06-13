@@ -1,0 +1,96 @@
+.iconShowerrain, .iconRain, .iconFewCloud, .iconThunderstorm{
+    color: grey;
+    font-size: 7.0vw;
+    margin-right: 5%;
+    padding: 10%;
+}
+
+.wind{
+font-size: 5.0vw;
+}
+.iconSun{
+    color: yellow;
+    font-size: 5.0vw;
+    margin-right: 5%;
+    padding: 10%;
+}
+.iconSnow{
+    color: rgb(0, 247, 255);
+    font-size: 7.0vw;
+    margin-right: 5%;
+    padding: 10%;
+}
+.nextFewContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nextFewTop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.nextFewBottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.nextFew{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: rgb(183, 183, 183, .3);
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+.lab{
+    font-size: 5.0vw;
+    margin: 0 auto;
+    padding: 2%;
+}
+.tempHigh, .tempLow{
+    font-size: 100%;
+    margin: 2%;
+}
+.iconwaterdrop{
+    color: rgb(0, 183, 255);
+    padding-right: 6%;
+    font-size: 1.2vw;
+}
+.perc{
+    width: 83%;
+    margin: 0 auto;
+    font-size: 5.0vw;
+}
+.tempHigh, .tempLow{
+    font-size: 5.0vw;
+}
+        /* Phones */
+
+@media only screen and (min-height: 666px) and (max-height: 811px){
+    .lab, .tempHigh, .tempLow{
+        font-size: 85%;
+    }
+    .perc{
+        font-size: 5.0vw;
+    }
+    .nextFew{
+        margin-bottom: 2%;
+    }
+}
+
+/* Ipad */
+
+@media only screen and (min-width: 760px){
+    .nextFewTop, .nextFewBottom{
+        width: 80%;
+        margin: auto;
+    }
+    .lab, .tempHigh, .tempLow, .perc, .wind{
+        font-size: 3.0vw;
+    }
+}
+
+/* Desktop */

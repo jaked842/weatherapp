@@ -1,0 +1,180 @@
+body, html{
+    color: black;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+#root{
+    background-image: url(./img/weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding-bottom: 20%;
+}
+
+.topSection{
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-family:serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.city{
+    margin: 0;
+    margin-top: 10%;
+    padding-top: 5%;
+}
+.day{
+    font-size: 5.0vw;
+    margin-top: 0;
+}
+.skyCover{
+    font-size: 120%;
+    margin: 0;
+    margin-top: 2%;
+}
+.currentTemp{
+    font-size: 300%;
+    margin: 0;
+    margin-top: 2%;
+}
+.nextFew{
+    width: 15%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: rgb(183, 183, 183, .5);
+}
+.icon{
+    color:yellow;
+    font-size: 180%;
+    border: 0;
+}
+.mainInfo{
+    margin-top: 5%;
+    background: rgba(243, 243, 243, 0.3);
+    border-radius: 10%;
+    color: rgb(255, 255, 255, .7);
+    width: 100%;
+}
+.iconClock{
+    color: rgb(255, 255, 255, .3);
+    margin-right: 10%;
+    font-size: 100%;
+}
+.currentTime{
+    width: 80%;
+    font-size: 5.0vw;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+.iconShowerrain, .iconRain, .fewclouds{
+    color: grey;
+    font-size: 10.0vw;
+    margin-right: 5%;
+    padding: 10%;
+}
+.iconSun{
+    color: yellow;
+    font-size: 10.0vw;
+    margin-right: 5%;
+    padding: 10%;
+}
+.skyCover, .iconSkyCover{
+    font-size: 4.0vw;
+}
+.currentTemp{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 5.0vw;
+    text-align: center;
+    padding-right: 12%;
+    
+}
+.feelTemp, .humidity, .pressure, .visibility, .cloudiness, .windspeed, .uvindex, .sunrise, .sunset{
+    font-size: 3.0vw;
+}
+.iconThermometer{
+    color: rgb(255, 0, 0, .5);
+    margin-right: 12%;
+    font-size: 100%;
+}
+.skyCover{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    font-size: 5.0vw;
+}
+.bottomSection{
+    width: 100%;
+    background-color: white;
+    border-radius: 15%;
+    color: rgb(17, 17, 17, .8);
+    font-size: 90%;
+    font-weight: 500;
+    display: flex;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottomLeft{
+    padding: 5%;
+    margin-left: 0 auto;
+    width: 50%;
+}
+.bottomLeft > p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.bottomRight{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+}
+.sunrise, .uvindex, .sunset{
+    margin: 0;
+    padding: 1%;
+}
+.uvindex{
+    padding-right: 25%;
+}
+
+/* Bottom Components */
+
+.specDayIcon{
+    font-size: 10%;
+}
+.futuredays{
+    width: 100%;
+    display: flex;
+}
+
+/* Phones */
+
+@media only screen and (min-height: 667px) and (max-height: 741px){
+    .day, .skyCover, .currentTemp,.currentTime{
+        font-size: 100%;
+    }
+}
+
+/* Ipad */
+
+@media only screen and (min-width: 760px){
+    .mainInfo, .bottomSection{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop */
